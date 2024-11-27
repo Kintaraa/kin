@@ -18,6 +18,9 @@ import CommunityPage from './pages/CommunityPage'
 import AboutPage from './pages/AboutPage'
 import PrivacyPage from './pages/PrivacyPage'
 import TermsPage from './pages/TermsPage'
+import ReportPage from './pages/ReportPage'
+import SupportPage from './pages/SupportPage'
+
 
 // Components
 import Header from './components/common/Header'
@@ -66,6 +69,8 @@ function App() {
             <Route path="/community" element={<CommunityPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
+            <Route path="/report" element={<ReportPage />} />
+            <Route path="/support" element={<SupportPage />} />
 
             {/* Protected dashboard routes */}
             <Route path="/dashboard">
