@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { user, logout } = useAuth()
@@ -32,12 +33,16 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold">
-                K
-              </div>
-              <span className="ml-3 text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
+            <div className="flex items-center">
+            <img
+              src="/Kintara-Logo.png"
+              alt="Kintara Logo"
+              className="w-10 h-10 object-contain"
+            />
+              <span className="ml-2 text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
                 Kintaraa
               </span>
+              </div>
             </Link>
           </div>
 
