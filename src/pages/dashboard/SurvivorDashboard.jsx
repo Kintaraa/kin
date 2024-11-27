@@ -6,6 +6,7 @@ import {
   AlertCircle, Shield, Clock, PlusCircle
 } from 'lucide-react'
 
+
 const SurvivorDashboard = () => {
   const { user } = useAuth()
   const navigate = useNavigate()
